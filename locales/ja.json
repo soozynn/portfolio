@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "portfolio": "ポートフォリオ",
+    "projects": "プロジェクト",
+    "technologies": "技術",
+    "about": "自己紹介"
+  },
+  "hero": {
+    "greeting": "こんにちは、",
+    "name": "チョン・スジン",
+    "role": "フロントエンドエンジニア",
+    "summary": "実際のユーザーフィードバックを機能改善につなげ、運用の観点で課題を定義・解決するフロントエンド開発者です。React と Vue を主に使用しています。",
+    "downloadCv": "履歴書ダウンロード",
+    "photoLabel": "プロフィール写真"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "livePreview": "プレビュー",
+    "checkGithub": "GitHub で見る",
+    "items": {
+      "adminB2c": {
+        "title": "加盟店向け Admin System (B2C)",
+        "description": "Admin・注文プラットフォームを担当。Vue3/TypeScript ベースの SPA 構築、CI/CD 自動化。加盟店運営で繰り返し発生していた CS を機能単位で分析し、管理者機能を再設計。繰り返し CS を 90% 以上削減し対応時間を短縮。構造を一般化し全加盟店向け Admin に拡張。"
+      },
+      "adminB2b": {
+        "title": "社内用 Admin System (B2B)",
+        "description": "分散していた社内機能を統合し、PHP ベースの Admin を Vue ベース SPA に再構築。メニュー設定、広告表示制限、権限制御などを実装。CS・技術チームのフィードバックに基づきユーザー中心の改善を主導。GitHub Actions + AWS(CDN, Route53, S3) で海外ドメイン別 CI/CD を構築。"
+      },
+      "hyatt": {
+        "title": "Hyatt — 注文タブレット & マスタータブレット | 管理画面",
+        "description": "注文タブレット：ホテル注文ドメインにおける新規要件定義を行い、企画・バックエンド・POSチームと連携して注文フローおよびデータ構造を設計・実装。多段階オプション、セットメニュー、カスタムテーマなど複雑な注文ケースに対応したUIを設計・実装。レガシーPOSの単一階層データ制約を克服するための再帰的パースロジックを開発し、カート内の「オプション変更」および多段階オプション状態注入ロジックを設計。技術スタック：Vue 3、TypeScript、Pinia、Vite、Socket.IO、i18n。管理画面：ハイアット専用の運用要件に合わせて既存管理画面をカスタマイズ。APIおよびデータ構造を再設計し、商品複製、セットメニュー、注文用タブレットのカスタマイズ、テーマ設定など、ホテルごとの運用ポリシーを柔軟に対応可能にした。技術スタック：Vue 3、TypeScript、Pinia、Element Plus、Vite。"
+      }
+    }
+  },
+  "technologies": {
+    "title": "技術スタック",
+    "additionalTitle": "その他の技術・スキル",
+    "levels": {
+      "advanced": "上級",
+      "regular": "中級",
+      "beginner": "初級"
+    },
+    "items": {
+      "javascript": "JavaScript (ES6+)",
+      "typescript": "TypeScript",
+      "react": "React",
+      "vue": "Vue 3 (Composition API)",
+      "pinia": "Pinia",
+      "tailwind": "Tailwind CSS",
+      "nextjs": "Next.js",
+      "zustandRedux": "Zustand / Redux",
+      "tanstackQuery": "TanStack Query"
+    },
+    "additional": [
+      "Git",
+      "CI/CD",
+      "Node.js",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "RWD"
+    ]
+  },
+  "about": {
+    "title": "自己紹介",
+    "timeline": {
+      "edu1": {
+        "year": "2017 – 2020",
+        "title": "江陵原州大学校",
+        "description": "歯衛生"
+      },
+      "edu2": {
+        "year": "2021.7 – 9",
+        "title": "Vanilla Coding プレップ",
+        "description": "JavaScript 基礎・発展コース"
+      },
+      "edu3": {
+        "year": "2021.9 – 2022.3",
+        "title": "Vanilla Coding ブートキャンプ",
+        "description": "コンピュータ構成、OS、ネットワーク、データ構造など CS 基礎とフルスタック Web 開発。最新フロント・バックエンド技術を用いた個人・チームプロジェクトを修了。"
+      },
+      "career": {
+        "year": "2022.9 – 2024.1",
+        "title": "Frontend Engineer",
+        "description": "加盟店向け Admin (B2C)、社内 Admin (B2B)、Hyatt Order/Master Tablet および Admin カスタマイズ。Vue 3 SPA 構築、CI/CD、運用効率・サービス安定性の向上。"
+      }
+    }
+  },
+  "footer": {
+    "contactPrompt": "お気軽にご連絡ください",
+    "email": "メール",
+    "telegram": "Telegram"
+  },
+  "common": {
+    "menuOpen": "メニューを開く"
+  },
+  "localeSwitcher": {
+    "label": "言語",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

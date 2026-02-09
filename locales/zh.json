@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "portfolio": "作品集",
+    "projects": "项目",
+    "technologies": "技术",
+    "about": "关于我"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "全秀珍",
+    "role": "前端工程师",
+    "summary": "将真实用户反馈转化为功能改进，从运营角度定义并解决问题。主要使用 React 和 Vue。",
+    "downloadCv": "下载简历",
+    "photoLabel": "个人照片"
+  },
+  "projects": {
+    "title": "项目",
+    "livePreview": "预览",
+    "checkGithub": "在 GitHub 查看",
+    "items": {
+      "adminB2c": {
+        "title": "加盟店 Admin 系统 (B2C)",
+        "description": "负责 Admin 与订单平台：Vue3/TypeScript SPA、CI/CD 自动化。针对加盟店运营中重复发生的客服类型按功能分析并重新设计管理员功能结构，重复客服减少 90% 以上、缩短对应时间。将结构通用化并扩展至全加盟店 Admin。"
+      },
+      "adminB2b": {
+        "title": "内部 Admin 系统 (B2B)",
+        "description": "整合分散的内部功能，将 PHP Admin 重建为 Vue SPA。实现菜单设置、广告曝光限制、权限控制等。基于客服与技术团队反馈推动以用户为中心的功能改进。搭建 GitHub Actions + AWS(CDN, Route53, S3) 海外域名 CI/CD。"
+      },
+      "hyatt": {
+        "title": "Hyatt — 点单平板 & 主控平板 | 管理后台",
+        "description": "点单平板：负责酒店点单领域的新需求定义，并与产品策划、后端及 POS 团队协作，设计并实现点单流程与数据结构。设计并实现了支持多层级选项、套餐菜单和自定义主题等复杂点单场景的 UI。为突破旧版 POS 仅支持单层数据结构的限制，开发了递归解析逻辑，并设计了购物车中“选项修改”及多层级选项状态注入逻辑。技术栈：Vue 3、TypeScript、Pinia、Vite、Socket.IO、i18n。管理后台：根据 Hyatt 专属运营需求对现有管理后台进行定制。通过 API 及数据结构重构，实现商品复制、套餐菜单、点单平板定制、主题配置等功能，灵活支持不同酒店的运营策略。技术栈：Vue 3、TypeScript、Pinia、Element Plus、Vite。"
+      }
+    }
+  },
+  "technologies": {
+    "title": "技术栈",
+    "additionalTitle": "其他技术与能力",
+    "levels": {
+      "advanced": "熟练",
+      "regular": "一般",
+      "beginner": "了解"
+    },
+    "items": {
+      "javascript": "JavaScript (ES6+)",
+      "typescript": "TypeScript",
+      "react": "React",
+      "vue": "Vue 3 (Composition API)",
+      "pinia": "Pinia",
+      "tailwind": "Tailwind CSS",
+      "nextjs": "Next.js",
+      "zustandRedux": "Zustand / Redux",
+      "tanstackQuery": "TanStack Query"
+    },
+    "additional": [
+      "Git",
+      "CI/CD",
+      "Node.js",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "响应式"
+    ]
+  },
+  "about": {
+    "title": "关于我",
+    "timeline": {
+      "edu1": {
+        "year": "2017 – 2020",
+        "title": "江陵原州大学",
+        "description": "口腔卫生"
+      },
+      "edu2": {
+        "year": "2021.7 – 9",
+        "title": "Vanilla Coding 预科",
+        "description": "JavaScript 基础与进阶"
+      },
+      "edu3": {
+        "year": "2021.9 – 2022.3",
+        "title": "Vanilla Coding 训练营",
+        "description": "计算机结构、操作系统、网络、数据结构等 CS 基础与全栈 Web 开发。完成个人与团队项目。"
+      },
+      "career": {
+        "year": "2022.9 – 2024.1",
+        "title": "前端工程师",
+        "description": "加盟店 Admin (B2C)、内部 Admin (B2B)、Hyatt 点餐/主控平板及 Admin 定制。Vue 3 SPA、CI/CD、运营效率与服务稳定性提升。"
+      }
+    }
+  },
+  "footer": {
+    "contactPrompt": "欢迎联系",
+    "email": "邮箱",
+    "telegram": "Telegram"
+  },
+  "common": {
+    "menuOpen": "打开菜单"
+  },
+  "localeSwitcher": {
+    "label": "语言",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}
