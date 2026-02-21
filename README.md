@@ -75,7 +75,7 @@ portfolio/
 
 ## 배포
 
-- **배포 링크**: [portfolio-soozynn.vercel.app](https://portfolio-soozynn.vercel.app) (GitHub Pages 등 배포 후 URL로 교체 가능)
+- **배포 링크**: [portfolio-soozynn.vercel.app](https://portfolio-soozynn.vercel.app)
 
 Use: Vercel
 
