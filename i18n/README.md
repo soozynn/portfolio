@@ -10,10 +10,10 @@
 
 ## 파일 목록
 
-| 파일 | 설명 |
-|------|------|
-| `routing.ts` | `defineRouting()`으로 locales(`en`, `ko`, `ja`, `zh`), `defaultLocale`, `localePrefix` 등 정의. |
-| `request.ts` | `getRequestConfig()`에서 요청 로케일을 검증하고, 해당 로케일의 `messages/*.json`을 로드해 반환. |
+| 파일            | 설명                                                                                                                                |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `routing.ts`    | `defineRouting()`으로 locales(`en`, `ko`, `ja`, `zh`), `defaultLocale`, `localePrefix` 등 정의.                                     |
+| `request.ts`    | `getRequestConfig()`에서 요청 로케일을 검증하고, 해당 로케일의 `messages/*.json`을 로드해 반환.                                     |
 | `navigation.ts` | `createNavigation(routing)`으로 `Link`, `redirect`, `usePathname`, `useRouter`, `getPathname` 내보냄. locale이 유지된 네비게이션용. |
 
 ## 연동

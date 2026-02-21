@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "timeline": "Timeline"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Su-jin Jeon",
+    "role": "Frontend developer",
+    "summary": "I connect real user feedback to feature improvement and define and solve problems from an operational perspective. \nI build with React and Vue.",
+    "downloadCv": "Download CV",
+    "photoLabel": "Profile photo"
+  },
+  "projects": {
+    "title": "Projects",
+    "livePreview": "Live preview",
+    "checkGithub": "Check on GitHub",
+    "items": {
+      "adminB2c": {
+        "title": "Franchisee Admin System (B2C)",
+        "description": "Led Admin and order platform: Vue 3/TypeScript SPA, CI/CD automation. Redesigned franchisee admin features from recurring CS patterns—reduced repeat CS by 90%+ and shortened response time. Generalized the structure and scaled to full franchisee admin.",
+        "detail": "To be continue.."
+      },
+      "adminB2b": {
+        "title": "Internal Admin System (B2B)",
+        "description": "Unified internal tools and rebuilt the PHP admin into a Vue-based SPA. Added menu settings, ad exposure limits, and permission control. Drove user-centered improvements from CS and engineering feedback. Built GitHub Actions + AWS (CDN, Route53, S3) CI/CD for overseas domains.",
+        "detail": "To be continue.."
+      },
+      "hyatt": {
+        "title": "Hyatt — Order Tablet & Master Tablet | Admin",
+        "description": "Order Tablet: Defined new requirements for the hotel ordering domain and designed/implemented order flows and data structures in collaboration with planning, backend, and POS teams. Designed and implemented complex ordering UIs including multi-level options, set menus, and custom themes. Developed recursive parsing logic to overcome limitations of legacy POS single-depth data, and designed cart option-change handling with multi-level option state injection. Tech stack: Vue 3, TypeScript, Pinia, Vite, Socket.IO, i18n. Admin: Customized the existing admin system to meet Hyatt-specific operational requirements. Redesigned APIs and data structures to flexibly support hotel-specific policies such as product duplication, set menus, order tablet customization, and theme configuration. Tech stack: Vue 3, TypeScript, Pinia, Element Plus, Vite.",
+        "detail": "To be continue.."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "additionalTitle": "Additional technologies and skills",
+    "items": {
+      "javascript": "JavaScript (ES6+)",
+      "typescript": "TypeScript",
+      "react": "React",
+      "vue": "Vue 3 (Composition API)",
+      "pinia": "Pinia",
+      "tailwind": "Tailwind CSS",
+      "nextjs": "Next.js",
+      "zustandRedux": "Zustand / Redux",
+      "tanstackQuery": "TanStack Query"
+    },
+    "additional": [
+      "Git",
+      "CI/CD",
+      "Node.js",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "RWD"
+    ]
+  },
+  "timeline": {
+    "title": "Timeline",
+    "timeline": {
+      "edu1": {
+        "year": "2017 – 2020",
+        "title": "Gangneung-Wonju National University",
+        "description": "Dental hygiene"
+      },
+      "edu2": {
+        "year": "Jul – Sep 2021",
+        "title": "Vanilla Coding Prep",
+        "description": "JavaScript fundamentals and advanced course"
+      },
+      "edu3": {
+        "year": "Sep 2021 – Mar 2022",
+        "title": "Vanilla Coding Bootcamp",
+        "description": "CS basics (computer architecture, OS, network, data structures), full-stack web development. \nCompleted individual and team projects with modern frontend and backend tech."
+      },
+      "career": {
+        "year": "Sep 2022 – Jan 2024",
+        "title": "Frontend Engineer",
+        "description": "Franchisee Admin (B2C), Internal Admin (B2B), Hyatt Order/Master Tablet and admin customization. \nVue 3 SPA, CI/CD, and operational stability improvements."
+      }
+    }
+  },
+  "footer": {
+    "email": "Email"
+  },
+  "common": {
+    "menuOpen": "Open menu"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ko": "Korean",
+    "ja": "Japanese",
+    "zh": "Chinese"
+  }
+}

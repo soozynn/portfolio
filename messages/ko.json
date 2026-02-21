@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "timeline": "Timeline"
+  },
+  "hero": {
+    "greeting": "안녕하세요, 저는",
+    "name": "전수진",
+    "role": "프론트엔드 개발자",
+    "summary": "실사용자 피드백을 기능 개선으로 연결하고, \n운영 관점에서 문제를 정의·해결하는 프론트엔드 개발자입니다. \nReact와 Vue를 주로 사용합니다.",
+    "downloadCv": "이력서 다운로드",
+    "photoLabel": "프로필 사진"
+  },
+  "projects": {
+    "title": "프로젝트",
+    "livePreview": "상세보기",
+    "checkGithub": "GitHub에서 보기",
+    "items": {
+      "adminB2c": {
+        "title": "점주용 Admin System (B2C)",
+        "description": "Admin 및 주문 플랫폼 전담. Vue3/TypeScript 기반 SPA 구축·CI/CD 자동화. 강성매장 운영 과정에서 반복 CS 유형을 기능 단위로 분리 분석해 점주용 관리자 기능 구조를 재설계하여 반복 CS 90% 이상 감소 및 운영 대응 시간 단축. 이후 구조를 일반화해 전체 점주용 어드민으로 확장.",
+        "detail": "추가예정..."
+      },
+      "adminB2b": {
+        "title": "사내용 Admin System (B2B)",
+        "description": "산재된 내부 기능 통합, PHP 기반 어드민을 Vue 기반 SPA로 재구축. 메뉴 설정, 광고 노출 제한, 권한 제어 등 기능 고도화. CS·기술팀 피드백 기반 실사용자 중심 기능 개선 주도. GitHub Actions + AWS(CDN, Route53, S3) 기반 해외 도메인별 CI/CD 구축.",
+        "detail": "추가예정..."
+      },
+      "hyatt": {
+        "title": "Hyatt — Order Tablet & Master Tablet | Admin",
+        "description": "Order Tablet: 호텔 주문 도메인 요구사항 신규 정의, 기획·백엔드·POS와 협업해 주문 흐름 및 데이터 구조 설계·구현. n차 옵션, 세트 메뉴, 커스텀 테마 등 복잡한 주문 케이스 UI 설계·구현. 레거시 POS 1단 데이터 한계 극복을 위한 Recursive 파싱 로직, 장바구니 '옵션 변경' 및 n차 옵션 상태 주입 로직 설계. Vue 3, TypeScript, Pinia, Vite, Socket.IO, i18n. Admin: 하얏트 전용 운영 요구에 맞춰 기존 어드민 커스터마이징. API 변경 및 데이터 구조 재설계로 상품 복제, 세트 메뉴, 주문용 태블릿 커스터마이징, 테마 설정 등 호텔별 운영 정책 유연 적용. Vue 3, TypeScript, Pinia, Element Plus, Vite.",
+        "detail": "추가예정..."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Tech",
+    "additionalTitle": "추가 기술 및 역량",
+    "items": {
+      "javascript": "JavaScript (ES6+)",
+      "typescript": "TypeScript",
+      "react": "React",
+      "vue": "Vue 3 (Composition API)",
+      "pinia": "Pinia",
+      "tailwind": "Tailwind CSS",
+      "nextjs": "Next.js",
+      "zustandRedux": "Zustand / Redux",
+      "tanstackQuery": "TanStack Query"
+    },
+    "additional": [
+      "Git",
+      "CI/CD",
+      "Node.js",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "반응형 웹"
+    ]
+  },
+  "timeline": {
+    "title": "Timeline",
+    "timeline": {
+      "edu1": {
+        "year": "2017 – 2020",
+        "title": "강릉영동대학",
+        "description": "치위생과"
+      },
+      "edu2": {
+        "year": "2021.7 – 9",
+        "title": "바닐라코딩 프렙",
+        "description": "JavaScript 기초 및 심화 과정"
+      },
+      "edu3": {
+        "year": "2021.9 – 2022.3",
+        "title": "바닐라코딩 부트캠프",
+        "description": "컴퓨터 구조, 운영체제, 네트워크, 자료구조 등 CS 기초와 풀스택 웹 개발.\n 최신 프론트엔드·백엔드 기술을 적용한 개인·팀 프로젝트 완수."
+      },
+      "career": {
+        "year": "2022.9 – 2024.1",
+        "title": "Frontend Engineer",
+        "description": "점주용 Admin (B2C), 사내용 Admin (B2B), Hyatt Order/Master Tablet 및 어드민 커스터마이징.\n Vue 3 SPA 구축, CI/CD, 운영 효율·서비스 안정성 개선."
+      }
+    }
+  },
+  "footer": {
+    "email": "이메일"
+  },
+  "common": {
+    "menuOpen": "메뉴 열기"
+  },
+  "localeSwitcher": {
+    "label": "언어",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

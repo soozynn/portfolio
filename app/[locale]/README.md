@@ -10,11 +10,11 @@
 
 ## 구조
 
-| 파일/폴더 | 설명 |
-|-----------|------|
+| 파일/폴더    | 설명                                                                         |
+| ------------ | ---------------------------------------------------------------------------- |
 | `layout.tsx` | 로케일 레이아웃. `NextIntlClientProvider`, `SetDocumentLocale`, 메시지 주입. |
-| `page.tsx` | 메인 페이지. Hero, Projects, Technologies, AboutMe, Footer를 조합. |
-| `companies/` | 프로젝트 상세 페이지용. `[companyId]` 동적 라우트 (추후 확장). |
+| `page.tsx`   | 메인 페이지. Hero, Projects, Technologies, AboutMe, Footer를 조합.           |
+| `companies/` | 프로젝트 상세 페이지용. `[companyId]` 동적 라우트 (추후 확장).               |
 
 ## 동작
 

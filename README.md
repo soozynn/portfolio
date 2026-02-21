@@ -10,13 +10,13 @@
 
 ## 기술 스택
 
-| 구분 | 기술 |
-|------|------|
+| 구분      | 기술                    |
+| --------- | ----------------------- |
 | Framework | Next.js 16 (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS 4 |
-| i18n | next-intl |
-| Animation | Framer Motion |
+| Language  | TypeScript              |
+| Styling   | Tailwind CSS 4          |
+| i18n      | next-intl               |
+| Animation | Framer Motion           |
 
 ## 실행 방법
 
@@ -42,17 +42,17 @@ pnpm start
 
 각 폴더의 세부 역할은 해당 폴더 안의 `README.md`를 참고하면 됩니다.
 
-| 폴더 | 역할 |
-|------|------|
-| [**app/**](app/README.md) | Next.js App Router 루트. 루트 레이아웃, 전역 CSS, 라우팅의 출발점. |
-| [**app/[locale]/**](app/[locale]/README.md) | 로케일별 라우트 (`/en`, `/ko`, `/ja`, `/zh`). 메인 페이지·로케일 레이아웃·next-intl Provider. |
-| [**app/[locale]/companies/**](app/[locale]/companies/README.md) | 프로젝트 상세 페이지용 동적 라우트 (`[companyId]`). 추후 확장용. |
-| [**components/**](components/README.md) | 공통 UI 컴포넌트 (Header, Hero, Projects, Technologies, AboutMe, Footer, LocaleSwitcher 등). |
-| [**i18n/**](i18n/README.md) | 다국어 설정. 라우팅 정의, 요청 시 메시지 로드, locale 유지 네비게이션. |
-| [**messages/**](messages/README.md) | 로케일별 번역 JSON (en, ko, ja, zh). 화면 문구 전부 여기서 관리. |
-| [**lib/**](lib/README.md) | 유틸·설정. 프로젝트/기술/타임라인 키, 소셜 링크, 연락처 등. |
-| [**public/**](public/README.md) | 정적 파일. 이력서 PDF, 이미지 등. URL 그대로 제공. |
-| [**content/**](content/README.md) | 콘텐츠/관계 정의용. 추후 MDX·상세 데이터 확장 시 사용. |
+| 폴더                                                            | 역할                                                                                          |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [**app/**](app/README.md)                                       | Next.js App Router 루트. 루트 레이아웃, 전역 CSS, 라우팅의 출발점.                            |
+| [**app/[locale]/**](app/[locale]/README.md)                     | 로케일별 라우트 (`/en`, `/ko`, `/ja`, `/zh`). 메인 페이지·로케일 레이아웃·next-intl Provider. |
+| [**app/[locale]/companies/**](app/[locale]/companies/README.md) | 프로젝트 상세 페이지용 동적 라우트 (`[companyId]`). 추후 확장용.                              |
+| [**components/**](components/README.md)                         | 공통 UI 컴포넌트 (Header, Hero, Projects, Technologies, AboutMe, Footer, LocaleSwitcher 등).  |
+| [**i18n/**](i18n/README.md)                                     | 다국어 설정. 라우팅 정의, 요청 시 메시지 로드, locale 유지 네비게이션.                        |
+| [**messages/**](messages/README.md)                             | 로케일별 번역 JSON (en, ko, ja, zh). 화면 문구 전부 여기서 관리.                              |
+| [**lib/**](lib/README.md)                                       | 유틸·설정. 프로젝트/기술/타임라인 키, 소셜 링크, 연락처 등.                                   |
+| [**public/**](public/README.md)                                 | 정적 파일. 이력서 PDF, 이미지 등. URL 그대로 제공.                                            |
+| [**content/**](content/README.md)                               | 콘텐츠/관계 정의용. 추후 MDX·상세 데이터 확장 시 사용.                                        |
 
 ```
 portfolio/
