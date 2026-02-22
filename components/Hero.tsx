@@ -59,9 +59,11 @@ export function Hero() {
               aria-label={t('photoLabel')}
             >
               <Image
-                src={'/profile.jpeg'}
+                src={'/profile.webp'}
                 alt="Profile photo"
                 fill
+                priority
+                fetchPriority="high"
                 sizes="(max-width: 640px) 160px, 192px"
                 className="rounded-full object-cover"
               />
