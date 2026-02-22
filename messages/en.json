@@ -33,6 +33,11 @@
         "description": "Order Tablet: Defined new requirements for the hotel ordering domain and designed/implemented order flows and data structures in collaboration with planning, backend, and POS teams. Designed and implemented complex ordering UIs including multi-level options, set menus, and custom themes. Developed recursive parsing logic to overcome limitations of legacy POS single-depth data, and designed cart option-change handling with multi-level option state injection. Tech stack: Vue 3, TypeScript, Pinia, Vite, Socket.IO, i18n. Admin: Customized the existing admin system to meet Hyatt-specific operational requirements. Redesigned APIs and data structures to flexibly support hotel-specific policies such as product duplication, set menus, order tablet customization, and theme configuration. Tech stack: Vue 3, TypeScript, Pinia, Element Plus, Vite.",
         "detail": "To be continue.."
       }
+    },
+    "imageNotice": {
+      "adminB2c": "※ This image is used for portfolio purposes with reference to an existing service UI.",
+      "adminB2b": "※ This image is for learning and portfolio demonstration purposes only.",
+      "hyatt": "※ This image is for learning and portfolio demonstration purposes only."
     }
   },
   "technologies": {

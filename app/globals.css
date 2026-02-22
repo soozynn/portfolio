@@ -51,8 +51,3 @@ body {
     var(--gradient-end)
   );
 }
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}

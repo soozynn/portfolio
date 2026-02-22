@@ -58,14 +58,13 @@ export function Hero() {
               className="relative flex h-40 w-40 items-center justify-center overflow-hidden rounded-full border-2 border-(--accent-ring)/70 bg-(--card) sm:h-48 sm:w-48"
               aria-label={t('photoLabel')}
             >
-              <span className="px-2 text-center text-sm text-(--muted)">
-                <Image
-                  src={'/photo.jpeg'}
-                  alt="Profile photo"
-                  fill
-                  className="rounded-full object-cover"
-                />
-              </span>
+              <Image
+                src={'/profile.jpeg'}
+                alt="Profile photo"
+                fill
+                sizes="(max-width: 640px) 160px, 192px"
+                className="rounded-full object-cover"
+              />
             </div>
           </motion.div>
         </div>
