@@ -33,6 +33,11 @@
         "description": "Order Tablet: 호텔 주문 도메인 요구사항 신규 정의, 기획·백엔드·POS와 협업해 주문 흐름 및 데이터 구조 설계·구현. n차 옵션, 세트 메뉴, 커스텀 테마 등 복잡한 주문 케이스 UI 설계·구현. 레거시 POS 1단 데이터 한계 극복을 위한 Recursive 파싱 로직, 장바구니 '옵션 변경' 및 n차 옵션 상태 주입 로직 설계. Vue 3, TypeScript, Pinia, Vite, Socket.IO, i18n. Admin: 하얏트 전용 운영 요구에 맞춰 기존 어드민 커스터마이징. API 변경 및 데이터 구조 재설계로 상품 복제, 세트 메뉴, 주문용 태블릿 커스터마이징, 테마 설정 등 호텔별 운영 정책 유연 적용. Vue 3, TypeScript, Pinia, Element Plus, Vite.",
         "detail": "추가예정..."
       }
+    },
+    "imageNotice": {
+      "adminB2c": "※ 본 이미지는 기존 서비스 UI를 참고하여 포트폴리오 목적으로 사용한 이미지입니다.",
+      "adminB2b": "※ 본 이미지는 학습 및 포트폴리오 시연을 위한 참고용 화면입니다.",
+      "hyatt": "※ 본 이미지는 학습 및 포트폴리오 시연을 위한 참고용 화면입니다."
     }
   },
   "technologies": {

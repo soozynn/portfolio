@@ -14,13 +14,6 @@ const projectImages: Record<ProjectKey, string> = {
   hyatt: '/projects/hyatt.jpg',
 };
 
-const projectImageNotice: Partial<Record<ProjectKey, string>> = {
-  adminB2c:
-    '※ 본 이미지는 기존 서비스 UI를 참고하여 포트폴리오 목적으로 사용한 이미지입니다.',
-  adminB2b: '※ 본 이미지는 학습 및 포트폴리오 시연을 위한 참고용 화면입니다.',
-  hyatt: '※ 본 이미지는 학습 및 포트폴리오 시연을 위한 참고용 화면입니다.',
-};
-
 const placeholderImage = '/next.svg';
 
 export function Projects() {
@@ -36,7 +29,6 @@ export function Projects() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {projectKeys.map((key, i) => {
             const src = projectImages[key] ?? placeholderImage;
-            const notice = projectImageNotice[key];
 
             return (
               <motion.article
@@ -57,16 +49,12 @@ export function Projects() {
                     priority={i === 0}
                   />
 
-                  {notice && (
-                    <>
-                      <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
-                      <div className="pointer-events-none absolute right-3 bottom-2 left-3">
-                        <p className="text-[11px] leading-snug text-white/85">
-                          {notice}
-                        </p>
-                      </div>
-                    </>
-                  )}
+                  <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="pointer-events-none absolute right-3 bottom-2 left-3">
+                    <p className="text-[11px] leading-snug text-white/85">
+                      {t(`imageNotice.${key}`)}
+                    </p>
+                  </div>
                 </div>
 
                 <div className="p-6">
