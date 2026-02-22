@@ -44,11 +44,11 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-semibold text-white md:text-2xl lg:text-3xl"
+          className="text-lg font-semibold text-white md:text-xl lg:text-2xl"
         >
           Portfolio
         </Link>
-        <ul className="hidden items-center gap-15 md:flex md:text-lg lg:text-xl">
+        <ul className="hidden items-center gap-15 md:flex md:text-base lg:text-lg">
           {navAnchors.map(({ href, key }) => (
             <li key={href}>
               <a
