@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { socialLinks } from '@/lib/portfolio-data';
 
@@ -79,59 +79,78 @@ const navAnchors = [
   { href: '#timeline', key: 'timeline' as const },
 ] as const;
 
-export function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
+export function MobileSidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
   const t = useTranslations('nav');
 
   return (
     <AnimatePresence>
       {sidebarOpen && (
-        <motion.aside
-          initial={{ x: '100%' }}
-          animate={{ x: 0 }}
-          exit={{ x: '100%' }}
-          transition={{ type: 'tween', duration: 0.25 }}
-          className="bg-background/95 fixed top-16 right-0 bottom-0 z-40 flex w-2/3 flex-col backdrop-blur-sm md:hidden"
-        >
-          <div className="flex h-full flex-col px-6 py-8">
-            <ul className="flex flex-col gap-5">
-              {navAnchors.map(({ href, key }) => (
-                <li key={href}>
-                  <a
-                    href={href}
-                    onClick={() => setSidebarOpen(false)}
-                    className="group flex items-center gap-3 rounded-xl px-3 py-3 text-white/90 hover:bg-white/5 hover:text-white"
-                  >
-                    <span className="text-white/70 group-hover:text-white">
-                      {navIcons[key]}
-                    </span>
-                    <span className="text-base">{t(key)}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+        <>
+          {/* Overlay */}
+          <motion.div
+            key="overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+            className="fixed top-16 right-0 left-0 z-30 h-[calc(100dvh-4rem)] bg-black/45 backdrop-blur-[2px] md:hidden"
+            onClick={() => setSidebarOpen(false)}
+            aria-hidden
+          />
 
-            <div className="mt-auto pt-6 sm:hidden">
-              <div className="flex flex-col gap-1">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.icon}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 rounded-xl px-3 py-3 text-white/80 hover:bg-white/5 hover:text-white"
-                  >
-                    <span className="text-white/70 group-hover:text-white">
-                      {socialIcons[link.icon]}
-                    </span>
-                    <span className="text-sm">
-                      {link.icon === 'github' ? 'Github' : 'Blog'}
-                    </span>
-                  </a>
+          {/* Sidebar panel */}
+          <motion.aside
+            key="panel"
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'tween', duration: 0.25, ease: 'easeOut' }}
+            className="bg-background/95 fixed top-16 right-0 z-40 h-[calc(100dvh-4rem)] w-2/3 overflow-y-auto border-l border-white/10 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+          >
+            <div className="flex min-h-full flex-col px-6 py-8">
+              <ul className="flex flex-col gap-5">
+                {navAnchors.map(({ href, key }) => (
+                  <li key={href}>
+                    <a
+                      href={href}
+                      onClick={() => setSidebarOpen(false)}
+                      className="group flex items-center gap-3 rounded-xl px-3 py-3 text-white/90 hover:bg-white/5 hover:text-white"
+                    >
+                      <span className="text-white/70 group-hover:text-white">
+                        {navIcons[key]}
+                      </span>
+                      <span className="text-base">{t(key)}</span>
+                    </a>
+                  </li>
                 ))}
+              </ul>
+
+              <div className="mt-auto pt-6 sm:hidden">
+                <div className="flex flex-col gap-1">
+                  {socialLinks.map((link) => (
+                    <a
+                      key={link.icon}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-3 rounded-xl px-3 py-3 text-white/80 hover:bg-white/5 hover:text-white"
+                    >
+                      <span className="text-white/70 group-hover:text-white">
+                        {socialIcons[link.icon]}
+                      </span>
+                      <span className="text-sm">
+                        {link.icon === 'github' ? 'GitHub' : 'Blog'}
+                      </span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        </motion.aside>
+          </motion.aside>
+        </>
       )}
     </AnimatePresence>
   );
